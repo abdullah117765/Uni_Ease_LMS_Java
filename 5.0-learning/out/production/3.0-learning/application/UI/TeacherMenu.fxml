@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.TeacherMenuController">
+   <children>
+      <BorderPane layoutX="-1.0" layoutY="-1.0" prefHeight="400.0" prefWidth="600.0">
+         <left>
+            <VBox prefHeight="400.0" prefWidth="139.0" style="-fx-background-color: #0A4969;" BorderPane.alignment="CENTER">
+               <children>
+                  <Button blendMode="SCREEN" lineSpacing="5.0" mnemonicParsing="false" onAction="#Home" opacity="0.47" prefHeight="42.0" prefWidth="138.0" style="-fx-alignment: center;" styleClass="transparent" text="Home" textFill="#431414" underline="true">
+                     <font>
+                        <Font name="Forte" size="16.0" />
+                     </font>
+                  </Button>
+                  <Button blendMode="SCREEN" lineSpacing="5.0" mnemonicParsing="false" onAction="#Attendence" opacity="0.47" prefHeight="42.0" prefWidth="138.0" style="-fx-alignment: center;" styleClass="transparent" text="Attendence" textFill="#431414" underline="true">
+                     <font>
+                        <Font name="Forte" size="16.0" />
+                     </font>
+                  </Button>
+                  <Button blendMode="SCREEN" lineSpacing="5.0" mnemonicParsing="false" onAction="#Marks" opacity="0.47" prefHeight="42.0" prefWidth="138.0" style="-fx-alignment: center;" styleClass="transparent" text="Marks" textFill="#431414" underline="true">
+                     <font>
+                        <Font name="Forte" size="16.0" />
+                     </font>
+                  </Button>
+                  <Button blendMode="SCREEN" lineSpacing="5.0" mnemonicParsing="false" onAction="#Queries" opacity="0.47" prefHeight="42.0" prefWidth="138.0" style="-fx-alignment: center;" styleClass="transparent" text="Queries" textFill="#431414" underline="true">
+                     <font>
+                        <Font name="Forte" size="16.0" />
+                     </font>
+                  </Button>
+                  <Button blendMode="SCREEN" lineSpacing="5.0" mnemonicParsing="false" onAction="#Announcement1" opacity="0.47" prefHeight="42.0" prefWidth="138.0" style="-fx-alignment: center;" styleClass="transparent" text="Announcmemnt" textFill="#431414" underline="true">
+                     <font>
+                        <Font name="Forte" size="16.0" />
+                     </font>
+                  </Button>
+                  <Button blendMode="SCREEN" lineSpacing="5.0" mnemonicParsing="false" onAction="#Logout" opacity="0.47" prefHeight="42.0" prefWidth="138.0" style="-fx-alignment: center;" styleClass="transparent" text="Logout" textFill="#431414" underline="true">
+                     <font>
+                        <Font name="Forte" size="16.0" />
+                     </font>
+                  </Button>
+               </children>
+            </VBox>
+         </left>
+         <top>
+            <AnchorPane prefHeight="78.0" prefWidth="600.0" BorderPane.alignment="CENTER">
+               <children>
+                  <Pane prefHeight="19.0" prefWidth="600.0" style="-fx-background-color: #0A4969;" />
+                  <Text fill="#553296" layoutX="189.0" layoutY="63.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Tech Tutor" textAlignment="CENTER" wrappingWidth="282.13671875">
+                     <font>
+                        <Font name="Chiller" size="39.0" />
+                     </font>
+                  </Text>
+               </children>
+            </AnchorPane>
+         </top>
+         <center>
+            <AnchorPane prefHeight="240.0" prefWidth="461.0" BorderPane.alignment="CENTER">
+               <children>
+                  <Label layoutX="108.0" layoutY="51.0" prefHeight="138.0" prefWidth="246.0" text="Welcome ">
+                     <font>
+                        <Font name="Mistral" size="81.0" />
+                     </font>
+                  </Label>
+               </children>
+            </AnchorPane>
+         </center>
+         <bottom>
+            <Pane prefHeight="76.0" prefWidth="600.0" BorderPane.alignment="CENTER" />
+         </bottom>
+      </BorderPane>
+   </children>
+</AnchorPane>

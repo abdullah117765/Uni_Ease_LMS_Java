@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<ScrollPane hbarPolicy="ALWAYS" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="828.0" prefWidth="767.0" vbarPolicy="ALWAYS" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.ControllerViewQuerry">
+  <content>
+    <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="832.0" prefWidth="853.0">
+         <children>
+            <Text layoutX="270.0" layoutY="74.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Tech Tutor" textAlignment="CENTER" wrappingWidth="264.13671875">
+               <font>
+                  <Font name="Chiller" size="39.0" />
+               </font>
+            </Text>
+            <Separator layoutX="44.0" layoutY="149.0" prefHeight="0.0" prefWidth="781.0" />
+            <Text layoutX="44.0" layoutY="135.0" strokeType="OUTSIDE" strokeWidth="0.0" text="-&gt;Querries" wrappingWidth="75.13671875">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Text>
+            <Button layoutX="597.0" layoutY="773.0" mnemonicParsing="false" onAction="#Back" prefHeight="25.0" prefWidth="74.0" text="Back" textFill="#000607">
+               <effect>
+                  <InnerShadow />
+               </effect>
+            </Button>
+            <Button layoutX="500.0" layoutY="773.0" mnemonicParsing="false" onAction="#GiveReply" prefHeight="25.0" prefWidth="84.0" text="Reply" textFill="#000607">
+               <effect>
+                  <InnerShadow />
+               </effect>
+            </Button>
+            <Text layoutX="29.0" layoutY="213.0" strokeType="OUTSIDE" strokeWidth="0.0">
+               <font>
+                  <Font size="17.0" />
+               </font>
+            </Text>
+            <TextField fx:id="QuerryReply" layoutX="57.0" layoutY="580.0" prefHeight="168.0" prefWidth="614.0" />
+            <Text layoutX="36.0" layoutY="551.0" strokeType="OUTSIDE" strokeWidth="0.0" text="-&gt;Reply" wrappingWidth="75.13671875">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Text>
+            <Separator layoutX="36.0" layoutY="565.0" prefHeight="0.0" prefWidth="781.0" />
+            <ScrollPane layoutX="62.0" layoutY="211.0" prefHeight="287.0" prefWidth="608.0">
+              <content>
+                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="276.0" prefWidth="605.0">
+                     <children>
+                        <TableView fx:id="QuerryTable" prefHeight="273.0" prefWidth="609.0">
+                          <columns>
+                            <TableColumn fx:id="studentid" editable="false" prefWidth="75.0" text="Student id" />
+                            <TableColumn fx:id="courseid" editable="false" prefWidth="73.0" text="CourseId" />
+                              <TableColumn fx:id="Querryid" editable="false" prefWidth="104.0" text="Querry Id" />
+                              <TableColumn fx:id="Querry" editable="false" prefWidth="356.0" text="Querry " />
+                          </columns>
+                        </TableView>
+                     </children>
+                  </AnchorPane>
+              </content>
+            </ScrollPane>
+            <ChoiceBox fx:id="myChoiceBox" layoutX="62.0" layoutY="170.0" prefWidth="150.0" />
+            <Button layoutX="584.0" layoutY="511.0" mnemonicParsing="false" onAction="#Display2" prefHeight="25.0" prefWidth="84.0" text="Display" textFill="#000607">
+               <effect>
+                  <InnerShadow />
+               </effect>
+            </Button>
+            <Button layoutX="402.0" layoutY="773.0" mnemonicParsing="false" onAction="#Reset" prefHeight="25.0" prefWidth="84.0" text="Reset" textFill="#000607">
+               <effect>
+                  <InnerShadow />
+               </effect>
+            </Button>
+         </children></AnchorPane>
+  </content>
+</ScrollPane>

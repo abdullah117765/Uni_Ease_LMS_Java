@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="397.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.ControllerLogin">
+   <children>
+      <TextField fx:id="Username" layoutX="135.0" layoutY="186.0" />
+      <TextField fx:id="Passward" layoutX="135.0" layoutY="226.0" />
+      <Text fontSmoothingType="LCD" layoutX="33.0" layoutY="244.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Password">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Text>
+      <Text fontSmoothingType="LCD" layoutX="26.0" layoutY="202.0" strokeType="OUTSIDE" strokeWidth="0.0" text="User name">
+         <font>
+            <Font size="17.0" />
+         </font>
+      </Text>
+      <ChoiceBox fx:id="myChoiceBox" layoutX="25.0" layoutY="128.0" prefWidth="150.0" />
+      <Text layoutX="150.0" layoutY="67.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Tech Tutor" textAlignment="CENTER" wrappingWidth="282.13671875">
+         <font>
+            <Font name="Chiller" size="39.0" />
+         </font>
+      </Text>
+      <Button layoutX="100.0" layoutY="281.0" mnemonicParsing="false" onAction="#loginpressed" prefHeight="25.0" prefWidth="120.0" text="Login" textFill="#000607">
+         <effect>
+            <InnerShadow />
+         </effect>
+      </Button>
+   </children>
+</AnchorPane>

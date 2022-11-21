@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<ScrollPane hbarPolicy="ALWAYS" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="805.0" prefWidth="870.0" vbarPolicy="ALWAYS" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.ControllerViewQuerry">
+  <content>
+    <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="832.0" prefWidth="853.0">
+         <children>
+            <TabPane layoutX="44.0" layoutY="174.0" prefHeight="328.0" prefWidth="664.0" tabClosingPolicy="UNAVAILABLE">
+               <tabs>
+                  <Tab text="Subject 1">
+                     <content>
+                        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="425.0" prefWidth="728.0">
+                           <children>
+                              <ScrollPane prefHeight="296.0" prefWidth="729.0">
+                                 <content>
+                                    <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="294.0" prefWidth="659.0">
+                                       <children>
+                                          <TableView layoutX="-19.0" prefHeight="294.0" prefWidth="683.0">
+                                             <columns>
+                                                <TableColumn prefWidth="102.0" text="SR no" />
+                                                <TableColumn prefWidth="114.0" text="Student Name" />
+                                                <TableColumn prefWidth="92.0" text="ID" />
+                                                <TableColumn prefWidth="374.0" text="Querry" />
+                                             </columns>
+                                          </TableView>
+                                       </children>
+                                    </AnchorPane>
+                                 </content>
+                              </ScrollPane>
+                           </children>
+                        </AnchorPane>
+                     </content>
+                  </Tab>
+                  <Tab text="Subject 2">
+                     <content>
+                        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="425.0" prefWidth="728.0">
+                           <children>
+                              <ScrollPane prefHeight="296.0" prefWidth="729.0">
+                                 <content>
+                                    <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="294.0" prefWidth="659.0">
+                                       <children>
+                                          <TableView layoutX="-19.0" prefHeight="294.0" prefWidth="683.0">
+                                             <columns>
+                                                <TableColumn prefWidth="102.0" text="SR no" />
+                                                <TableColumn prefWidth="114.0" text="Student Name" />
+                                                <TableColumn prefWidth="92.0" text="ID" />
+                                                <TableColumn prefWidth="374.0" text="Querry" />
+                                             </columns>
+                                          </TableView>
+                                       </children>
+                                    </AnchorPane>
+                                 </content>
+                              </ScrollPane>
+                           </children>
+                        </AnchorPane>
+                     </content>
+                  </Tab>
+                  <Tab text="Subject 3">
+                     <content>
+                        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="425.0" prefWidth="728.0">
+                           <children>
+                              <ScrollPane prefHeight="296.0" prefWidth="729.0">
+                                 <content>
+                                    <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="294.0" prefWidth="659.0">
+                                       <children>
+                                          <TableView layoutX="-19.0" prefHeight="294.0" prefWidth="683.0">
+                                             <columns>
+                                                <TableColumn prefWidth="91.0" text="SR no" />
+                                                <TableColumn prefWidth="125.0" text="Student Name" />
+                                                <TableColumn prefWidth="70.0" text="ID" />
+                                                <TableColumn prefWidth="396.0" text="Querry" />
+                                             </columns>
+                                          </TableView>
+                                       </children>
+                                    </AnchorPane>
+                                 </content>
+                              </ScrollPane>
+                           </children>
+                        </AnchorPane>
+                     </content>
+                  </Tab>
+               </tabs>
+            </TabPane>
+            <Text layoutX="270.0" layoutY="74.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Tech Tutor" textAlignment="CENTER" wrappingWidth="264.13671875">
+               <font>
+                  <Font name="Chiller" size="39.0" />
+               </font>
+            </Text>
+            <Separator layoutX="44.0" layoutY="149.0" prefHeight="0.0" prefWidth="781.0" />
+            <Text layoutX="44.0" layoutY="135.0" strokeType="OUTSIDE" strokeWidth="0.0" text="-&gt;Querries" wrappingWidth="75.13671875">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Text>
+            <Button layoutX="735.0" layoutY="754.0" mnemonicParsing="false" onAction="#Back" prefHeight="25.0" prefWidth="74.0" text="Back" textFill="#000607">
+               <effect>
+                  <InnerShadow />
+               </effect>
+            </Button>
+            <Button layoutX="732.0" layoutY="313.0" mnemonicParsing="false" onAction="#GiveReply" prefHeight="25.0" prefWidth="84.0" text="Reply" textFill="#000607">
+               <effect>
+                  <InnerShadow />
+               </effect>
+            </Button>
+            <Text layoutX="29.0" layoutY="213.0" strokeType="OUTSIDE" strokeWidth="0.0">
+               <font>
+                  <Font size="17.0" />
+               </font>
+            </Text>
+            <Button layoutX="732.0" layoutY="259.0" mnemonicParsing="false" onAction="#DeleteQuerry" prefHeight="25.0" prefWidth="80.0" text="Delete" textFill="#000607">
+               <effect>
+                  <InnerShadow />
+               </effect>
+            </Button>
+            <TextField fx:id="QuerryReply" layoutX="57.0" layoutY="580.0" prefHeight="168.0" prefWidth="614.0" />
+            <Text layoutX="36.0" layoutY="551.0" strokeType="OUTSIDE" strokeWidth="0.0" text="-&gt;Reply" wrappingWidth="75.13671875">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Text>
+            <Separator layoutX="36.0" layoutY="565.0" prefHeight="0.0" prefWidth="781.0" />
+         </children></AnchorPane>
+  </content>
+</ScrollPane>

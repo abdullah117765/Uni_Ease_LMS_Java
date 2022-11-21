@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<ScrollPane hbarPolicy="ALWAYS" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="820.0" prefWidth="799.0" vbarPolicy="ALWAYS" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.ControllerUploadMarks">
+  <content>
+    <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="881.0" prefWidth="773.0">
+         <children>
+            <Text layoutX="270.0" layoutY="74.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Tech Tutor" textAlignment="CENTER" wrappingWidth="264.13671875">
+               <font>
+                  <Font name="Chiller" size="39.0" />
+               </font>
+            </Text>
+            <Separator layoutX="36.0" layoutY="118.0" prefHeight="6.0" prefWidth="722.0" />
+            <Text layoutX="36.0" layoutY="110.0" strokeType="OUTSIDE" strokeWidth="0.0" text="-&gt; Upload Marks" wrappingWidth="123.13671875">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Text>
+            <Button layoutX="623.0" layoutY="763.0" mnemonicParsing="false" onAction="#Back" prefHeight="25.0" prefWidth="74.0" text="Back" textFill="#000607">
+               <effect>
+                  <InnerShadow />
+               </effect>
+            </Button>
+            <Text layoutX="29.0" layoutY="213.0" strokeType="OUTSIDE" strokeWidth="0.0">
+               <font>
+                  <Font size="17.0" />
+               </font>
+            </Text>
+            <Button layoutX="598.0" layoutY="182.0" mnemonicParsing="false" onAction="#SaveMarks" prefHeight="25.0" prefWidth="80.0" text="Save" textFill="#000607">
+               <effect>
+                  <InnerShadow />
+               </effect>
+            </Button>
+            <Text layoutX="131.0" layoutY="288.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Obtained " wrappingWidth="141.13671875">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Text>
+            <TextField fx:id="OMarks" layoutX="271.0" layoutY="268.0" prefHeight="25.0" prefWidth="275.0" />
+            <TextField fx:id="StudentId" layoutX="271.0" layoutY="192.0" prefHeight="25.0" prefWidth="275.0" />
+            <TextField fx:id="TMarks" layoutX="270.0" layoutY="232.0" prefHeight="25.0" prefWidth="273.0" />
+            <Text layoutX="130.0" layoutY="253.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Total Marks" wrappingWidth="144.13671875">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Text>
+            <Text layoutX="140.0" layoutY="215.0" strokeType="OUTSIDE" strokeWidth="0.0" text="StudentId" wrappingWidth="141.13671875">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Text>
+            <TextField fx:id="CourseId" layoutX="270.0" layoutY="148.0" prefHeight="25.0" prefWidth="277.0" />
+            <Text layoutX="98.0" layoutY="168.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Course Id" textAlignment="CENTER" wrappingWidth="151.13671875">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Text>
+            <Text layoutX="34.0" layoutY="376.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Students" wrappingWidth="62.13671875">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Text>
+            <Separator layoutX="34.0" layoutY="391.0" prefHeight="0.0" prefWidth="726.0" />
+            <ScrollPane layoutX="109.0" layoutY="455.0" prefHeight="278.0" prefWidth="588.0">
+               <content>
+                  <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="276.0" prefWidth="588.0">
+                     <children>
+                        <TableView fx:id="StudentTable" editable="true" prefHeight="266.0" prefWidth="588.0">
+                           <columns>
+                              <TableColumn fx:id="StudentRollNumber" editable="false" prefWidth="119.0" text="Roll Number" />
+                              <TableColumn fx:id="StudentName" editable="false" prefWidth="106.0" text="Name" />
+                              <TableColumn fx:id="StudentSection" prefWidth="115.0" text="Section" />
+                              <TableColumn fx:id="StudentDepartment" editable="false" prefWidth="128.0" text="Department" />
+                              <TableColumn fx:id="StudentPhoneNumber" prefWidth="119.0" text="Phonenumber" />
+                           </columns>
+                        </TableView>
+                     </children>
+                  </AnchorPane>
+               </content>
+            </ScrollPane>
+            <ChoiceBox fx:id="myChoiceBox2" layoutX="109.0" layoutY="416.0" prefHeight="25.0" prefWidth="163.0" />
+            <Button layoutX="598.0" layoutY="223.0" mnemonicParsing="false" onAction="#UpdateMarks" prefHeight="25.0" prefWidth="80.0" text="Update" textFill="#000607">
+               <effect>
+                  <InnerShadow />
+               </effect>
+            </Button>
+            <Button layoutX="598.0" layoutY="269.0" mnemonicParsing="false" onAction="#Reset" prefHeight="25.0" prefWidth="80.0" text="Reset" textFill="#000607">
+               <effect>
+                  <InnerShadow />
+               </effect>
+            </Button>
+            <TextField fx:id="Type" layoutX="271.0" layoutY="308.0" prefHeight="25.0" prefWidth="275.0" />
+            <Text layoutX="131.0" layoutY="328.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Type" wrappingWidth="141.13671875">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Text>
+         </children></AnchorPane>
+  </content>
+</ScrollPane>

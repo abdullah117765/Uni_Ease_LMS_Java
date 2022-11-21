@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.media.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<ScrollPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="785.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.Controlleroffercourse">
+  <content>
+    <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="797.0" prefWidth="626.0">
+         <children>
+            <Text layoutX="177.0" layoutY="91.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Tech Tutor" textAlignment="CENTER" wrappingWidth="264.13671875">
+               <font>
+                  <Font name="Chiller" size="39.0" />
+               </font>
+            </Text>
+            <Text layoutX="53.0" layoutY="156.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Course Id" textAlignment="CENTER" wrappingWidth="151.13671875">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Text>
+            <TextField fx:id="CourseId" layoutX="235.0" layoutY="137.0" prefHeight="25.0" prefWidth="277.0" />
+            <Text layoutX="91.0" layoutY="238.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Semester " wrappingWidth="141.13671875">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Text>
+            <Text layoutX="89.0" layoutY="202.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Batch Id" wrappingWidth="144.13671875">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Text>
+            <TextField fx:id="Batchid" layoutX="237.0" layoutY="182.0" prefHeight="25.0" prefWidth="273.0" />
+            <TextField fx:id="Semester" layoutX="236.0" layoutY="218.0" prefHeight="25.0" prefWidth="275.0" />
+            <Button layoutX="343.0" layoutY="301.0" mnemonicParsing="false" onAction="#unofferCourse" prefHeight="25.0" prefWidth="74.0" text="Unoffer" textFill="#000607">
+               <effect>
+                  <InnerShadow />
+               </effect>
+            </Button>
+            <ScrollPane layoutX="34.0" layoutY="414.0" prefHeight="263.0" prefWidth="531.0">
+               <content>
+                  <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="261.0" prefWidth="503.0">
+                     <children>
+                        <TableView fx:id="OfferCourseTable" prefHeight="264.0" prefWidth="534.0">
+                          <columns>
+                            <TableColumn fx:id="OfferCourseId" prefWidth="151.0" text="Course Id" />
+                            <TableColumn fx:id="OfferCourseName" prefWidth="196.0" text="Name" />
+                              <TableColumn fx:id="OfferCourseCredithour" prefWidth="183.0" text="Credit Hours" />
+                          </columns>
+                        </TableView>
+                     </children>
+                  </AnchorPane>
+               </content>
+            </ScrollPane>
+            <Separator layoutX="28.0" layoutY="391.0" prefHeight="15.0" prefWidth="543.0" />
+            <Text layoutX="290.0" layoutY="379.0" strokeType="OUTSIDE" strokeWidth="0.0" text="CourseId" underline="true" wrappingWidth="62.791015625">
+               <font>
+                  <Font size="15.0" />
+               </font></Text>
+            <Button layoutX="488.0" layoutY="699.0" mnemonicParsing="false" onAction="#Back" prefHeight="25.0" prefWidth="74.0" text="Back" textFill="#000607">
+               <effect>
+                  <InnerShadow />
+               </effect>
+            </Button>
+            <Button layoutX="437.0" layoutY="301.0" mnemonicParsing="false" onAction="#Reset" prefHeight="25.0" prefWidth="88.0" text="Reset" textFill="#000607">
+               <effect>
+                  <InnerShadow />
+               </effect>
+            </Button>
+            <Button layoutX="297.0" layoutY="699.0" mnemonicParsing="false" onAction="#Display" prefHeight="25.0" prefWidth="69.0" text="Display" textFill="#000607">
+               <effect>
+                  <InnerShadow />
+               </effect>
+            </Button>
+            <Button layoutX="233.0" layoutY="301.0" mnemonicParsing="false" onAction="#OfferCourse" prefHeight="25.0" prefWidth="88.0" text="Offer" textFill="#000607">
+               <effect>
+                  <InnerShadow />
+               </effect>
+            </Button>
+            <TextField fx:id="SearchCousre" layoutX="363.0" layoutY="362.0" prefHeight="25.0" prefWidth="199.0" promptText="Search course to delete" />
+            <Separator layoutX="14.0" layoutY="338.0" prefHeight="15.0" prefWidth="543.0" />
+            <TextField fx:id="Department" layoutX="236.0" layoutY="256.0" prefHeight="25.0" prefWidth="275.0" />
+            <Text layoutX="91.0" layoutY="276.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Department" wrappingWidth="141.13671875">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Text>
+            <Button layoutX="377.0" layoutY="699.0" mnemonicParsing="false" onAction="#DeleteCourse" prefHeight="25.0" prefWidth="101.0" text="Delete Course" textFill="#000607">
+               <effect>
+                  <InnerShadow />
+               </effect>
+            </Button>
+            <Button layoutX="217.0" layoutY="699.0" mnemonicParsing="false" onAction="#Search" prefHeight="25.0" prefWidth="69.0" text="Search" textFill="#000607">
+               <effect>
+                  <InnerShadow />
+               </effect>
+            </Button>
+         </children></AnchorPane>
+  </content>
+</ScrollPane>
