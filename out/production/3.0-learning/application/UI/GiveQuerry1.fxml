@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<ScrollPane hbarPolicy="ALWAYS" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="594.0" prefWidth="643.0" vbarPolicy="ALWAYS" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.ControllergiveQuerry">
+  <content>
+    <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="832.0" prefWidth="853.0">
+         <children>
+            <Text layoutX="170.0" layoutY="85.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Tech Tutor" textAlignment="CENTER" wrappingWidth="264.13671875">
+               <font>
+                  <Font name="Chiller" size="39.0" />
+               </font>
+            </Text>
+            <Separator layoutX="44.0" layoutY="149.0" prefHeight="0.0" prefWidth="781.0" />
+            <Text layoutX="44.0" layoutY="135.0" strokeType="OUTSIDE" strokeWidth="0.0" text="-&gt;Querries" wrappingWidth="75.13671875">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Text>
+            <Button layoutX="427.0" layoutY="457.0" mnemonicParsing="false" onAction="#Back" prefHeight="25.0" prefWidth="74.0" text="Back" textFill="#000607">
+               <effect>
+                  <InnerShadow />
+               </effect>
+            </Button>
+            <Button layoutX="327.0" layoutY="457.0" mnemonicParsing="false" onAction="#Givequerrytoteacher" prefHeight="25.0" prefWidth="84.0" text="Give" textFill="#000607">
+               <effect>
+                  <InnerShadow />
+               </effect>
+            </Button>
+            <Text layoutX="29.0" layoutY="213.0" strokeType="OUTSIDE" strokeWidth="0.0">
+               <font>
+                  <Font size="17.0" />
+               </font>
+            </Text>
+            <TextField fx:id="Querry" layoutX="39.0" layoutY="217.0" prefHeight="211.0" prefWidth="462.0" />
+            <ChoiceBox fx:id="myChoiceBox" layoutX="39.0" layoutY="182.0" prefWidth="150.0" />
+         </children></AnchorPane>
+  </content>
+</ScrollPane>

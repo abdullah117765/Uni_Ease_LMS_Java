@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<ScrollPane hbarPolicy="ALWAYS" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="560.0" prefWidth="566.0" vbarPolicy="ALWAYS" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.ControllerViewMarks">
+  <content>
+    <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="571.0" prefWidth="565.0">
+         <children>
+            <Text layoutX="143.0" layoutY="64.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Tech Tutor" textAlignment="CENTER" wrappingWidth="264.13671875">
+               <font>
+                  <Font name="Chiller" size="39.0" />
+               </font>
+            </Text>
+            <Separator layoutX="36.0" layoutY="113.0" prefHeight="3.0" prefWidth="497.0" />
+            <Text layoutX="36.0" layoutY="101.0" strokeType="OUTSIDE" strokeWidth="0.0" text="-&gt;Marks" wrappingWidth="62.13671875">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Text>
+            <Text layoutX="29.0" layoutY="213.0" strokeType="OUTSIDE" strokeWidth="0.0">
+               <font>
+                  <Font size="17.0" />
+               </font>
+            </Text>
+            <ChoiceBox fx:id="myChoiceBox1" layoutX="45.0" layoutY="150.0" prefHeight="25.0" prefWidth="163.0" />
+            <Button layoutX="400.0" layoutY="481.0" mnemonicParsing="false" onAction="#Back" prefHeight="25.0" prefWidth="59.0" text="Back" textFill="#000607">
+               <effect>
+                  <InnerShadow />
+               </effect>
+            </Button>
+            <ScrollPane layoutX="45.0" layoutY="185.0" prefHeight="278.0" prefWidth="414.0">
+              <content>
+                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="276.0" prefWidth="419.0">
+                     <children>
+                        <TableView fx:id="MarksTable" layoutX="-2.0" prefHeight="277.0" prefWidth="418.0">
+                          <columns>
+                            <TableColumn fx:id="Type" prefWidth="121.0" text="Type" />
+                            <TableColumn fx:id="Obtained" prefWidth="119.0" text="Obtain Marks" />
+                              <TableColumn fx:id="Total" prefWidth="172.0" text="Total" />
+                          </columns>
+                        </TableView>
+                     </children>
+                  </AnchorPane>
+              </content>
+            </ScrollPane>
+         </children></AnchorPane>
+  </content>
+</ScrollPane>

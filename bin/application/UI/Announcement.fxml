@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<ScrollPane hbarPolicy="ALWAYS" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="546.0" prefWidth="690.0" vbarPolicy="ALWAYS" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.ControllerAnnouncement">
+  <content>
+    <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="547.0" prefWidth="665.0">
+         <children>
+            <Text layoutX="168.0" layoutY="60.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Tech Tutor" textAlignment="CENTER" wrappingWidth="264.13671875">
+               <font>
+                  <Font name="Chiller" size="39.0" />
+               </font>
+            </Text>
+            <Separator layoutX="36.0" layoutY="121.0" prefHeight="3.0" prefWidth="591.0" />
+            <Button layoutX="420.0" layoutY="416.0" mnemonicParsing="false" onAction="#Back" prefHeight="25.0" prefWidth="74.0" text="Back" textFill="#000607">
+               <effect>
+                  <InnerShadow />
+               </effect>
+            </Button>
+            <Text layoutX="29.0" layoutY="213.0" strokeType="OUTSIDE" strokeWidth="0.0">
+               <font>
+                  <Font size="17.0" />
+               </font>
+            </Text>
+            <Button layoutX="316.0" layoutY="416.0" mnemonicParsing="false" onAction="#Announce" prefHeight="25.0" prefWidth="80.0" text="Announce" textFill="#000607">
+               <effect>
+                  <InnerShadow />
+               </effect>
+            </Button>
+            <Text layoutX="36.0" layoutY="106.0" strokeType="OUTSIDE" strokeWidth="0.0" text="-&gt; Announcement" textAlignment="CENTER" wrappingWidth="151.13671875">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Text>
+            <Button layoutX="202.0" layoutY="416.0" mnemonicParsing="false" onAction="#Reset" prefHeight="25.0" prefWidth="80.0" text="Reset" textFill="#000607">
+               <effect>
+                  <InnerShadow />
+               </effect>
+            </Button>
+            <CheckBox layoutX="521.0" layoutY="150.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="63.0" text="Teacher" />
+            <CheckBox layoutX="521.0" layoutY="193.0" mnemonicParsing="false" prefHeight="48.0" prefWidth="72.0" text="Student" />
+            <TextArea fx:id="Announcement" layoutX="36.0" layoutY="136.0" prefHeight="260.0" prefWidth="466.0" promptText="Announce something" />
+         </children></AnchorPane>
+  </content>
+</ScrollPane>

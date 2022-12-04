@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<ScrollPane hbarPolicy="ALWAYS" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="546.0" prefWidth="690.0" vbarPolicy="ALWAYS" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.ControllerAnnouncement">
+  <content>
+    <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="547.0" prefWidth="665.0">
+         <children>
+            <Text layoutX="168.0" layoutY="60.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Tech Tutor" textAlignment="CENTER" wrappingWidth="264.13671875">
+               <font>
+                  <Font name="Chiller" size="39.0" />
+               </font>
+            </Text>
+            <Separator layoutX="36.0" layoutY="121.0" prefHeight="3.0" prefWidth="591.0" />
+            <Button layoutX="527.0" layoutY="458.0" mnemonicParsing="false" onAction="#Back" prefHeight="25.0" prefWidth="74.0" text="Back" textFill="#000607">
+               <effect>
+                  <InnerShadow />
+               </effect>
+            </Button>
+            <Text layoutX="29.0" layoutY="213.0" strokeType="OUTSIDE" strokeWidth="0.0">
+               <font>
+                  <Font size="17.0" />
+               </font>
+            </Text>
+            <Text layoutX="36.0" layoutY="106.0" strokeType="OUTSIDE" strokeWidth="0.0" text="-&gt; Announcement" textAlignment="CENTER" wrappingWidth="151.13671875">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Text>
+            <ScrollPane layoutX="40.0" layoutY="139.0" prefHeight="298.0" prefWidth="561.0">
+              <content>
+                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="296.0" prefWidth="559.0">
+                     <children>
+                        <TableView layoutX="1.0" layoutY="-4.0" prefHeight="301.0" prefWidth="557.0">
+                          <columns>
+                            <TableColumn fx:id="Announcementcolumn" editable="false" prefWidth="555.0" text="Announcementcolumn" />
+                          </columns>
+                        </TableView>
+                     </children>
+                  </AnchorPane>
+              </content>
+            </ScrollPane>
+         </children></AnchorPane>
+  </content>
+</ScrollPane>

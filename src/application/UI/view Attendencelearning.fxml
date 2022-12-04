@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<ScrollPane hbarPolicy="ALWAYS" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="595.0" prefWidth="541.0" vbarPolicy="ALWAYS" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.ControllerViewAttendence">
+  <content>
+    <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="1022.0" prefWidth="570.0">
+         <children>
+            <Text layoutX="270.0" layoutY="74.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Tech Tutor" textAlignment="CENTER" wrappingWidth="264.13671875">
+               <font>
+                  <Font name="Chiller" size="39.0" />
+               </font>
+            </Text>
+            <Separator layoutX="44.0" layoutY="149.0" prefHeight="3.0" prefWidth="455.0" />
+            <Text layoutX="44.0" layoutY="137.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Display" wrappingWidth="62.13671875">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Text>
+            <Button layoutX="333.0" layoutY="528.0" mnemonicParsing="false" onAction="#Back" prefHeight="25.0" prefWidth="59.0" text="Back" textFill="#000607">
+               <effect>
+                  <InnerShadow />
+               </effect>
+            </Button>
+            <Text layoutX="29.0" layoutY="213.0" strokeType="OUTSIDE" strokeWidth="0.0">
+               <font>
+                  <Font size="17.0" />
+               </font>
+            </Text>
+            <TableView fx:id="ViewAttendence" layoutX="44.0" layoutY="217.0" prefHeight="295.0" prefWidth="358.0">
+               <columns>
+                  <TableColumn fx:id="Date" editable="false" prefWidth="174.0" text="Date" />
+                  <TableColumn fx:id="Attendence" editable="false" prefWidth="183.0" text="Attendence" />
+               </columns>
+            </TableView>
+            <ChoiceBox fx:id="myChoiceBox" layoutX="44.0" layoutY="182.0" prefHeight="25.0" prefWidth="197.0" />
+            <Button layoutX="256.0" layoutY="528.0" mnemonicParsing="false" onAction="#Display2" prefHeight="25.0" prefWidth="59.0" text="Display" textFill="#000607">
+               <effect>
+                  <InnerShadow />
+               </effect>
+            </Button>
+         </children></AnchorPane>
+  </content>
+</ScrollPane>

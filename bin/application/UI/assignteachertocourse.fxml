@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.media.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<ScrollPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="473.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.ControllerAssignTeacher">
+  <content>
+    <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="555.0" prefWidth="626.0">
+         <children>
+            <Text layoutX="177.0" layoutY="91.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Tech Tutor" textAlignment="CENTER" wrappingWidth="264.13671875">
+               <font>
+                  <Font name="Chiller" size="39.0" />
+               </font>
+            </Text>
+            <Text layoutX="28.0" layoutY="157.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Teacher Id" textAlignment="CENTER" wrappingWidth="151.13671875">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Text>
+            <TextField fx:id="TeacherId" layoutX="235.0" layoutY="137.0" prefHeight="25.0" prefWidth="277.0" />
+            <Button layoutX="301.0" layoutY="406.0" mnemonicParsing="false" onAction="#DEASSIGN" prefHeight="25.0" prefWidth="88.0" text="DE- Assign" textFill="#000607">
+               <effect>
+                  <InnerShadow />
+               </effect>
+            </Button>
+            <Button layoutX="413.0" layoutY="406.0" mnemonicParsing="false" onAction="#Back" prefHeight="25.0" prefWidth="74.0" text="Back" textFill="#000607">
+               <effect>
+                  <InnerShadow />
+               </effect>
+            </Button>
+            <Button layoutX="196.0" layoutY="406.0" mnemonicParsing="false" onAction="#Assign" prefHeight="25.0" prefWidth="80.0" text="Assign" textFill="#000607">
+               <effect>
+                  <InnerShadow />
+               </effect>
+            </Button>
+            <Button layoutX="73.0" layoutY="406.0" mnemonicParsing="false" onAction="#Reset" prefHeight="25.0" prefWidth="88.0" text="Reset" textFill="#000607">
+               <effect>
+                  <InnerShadow />
+               </effect>
+            </Button>
+            <TextField fx:id="Batchid" layoutX="236.0" layoutY="276.0" prefHeight="25.0" prefWidth="275.0" />
+            <Text layoutX="58.0" layoutY="296.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Batch id" wrappingWidth="157.13671875">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Text>
+            <Text layoutX="28.0" layoutY="248.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Course Id" textAlignment="CENTER" wrappingWidth="151.13671875">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Text>
+            <TextField fx:id="CourseId" layoutX="235.0" layoutY="229.0" prefHeight="25.0" prefWidth="277.0" />
+            <Text layoutX="65.0" layoutY="203.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Semester " wrappingWidth="157.13671875">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Text>
+            <TextField fx:id="Department" layoutX="240.0" layoutY="328.0" prefHeight="25.0" prefWidth="275.0" />
+            <TextField fx:id="Semester" layoutX="236.0" layoutY="184.0" prefHeight="25.0" prefWidth="275.0" />
+            <Text layoutX="58.0" layoutY="349.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Department" wrappingWidth="157.13671875">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Text>
+         </children></AnchorPane>
+  </content>
+</ScrollPane>

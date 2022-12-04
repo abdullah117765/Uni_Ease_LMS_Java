@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.media.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="464.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.ControllerAdmin">
+   <children>
+      <Button layoutX="300.0" layoutY="353.0" mnemonicParsing="false" onAction="#MakeAccount" prefHeight="25.0" prefWidth="97.0" text="Add" textFill="#000607">
+         <effect>
+            <InnerShadow />
+         </effect>
+      </Button>
+      <Text layoutX="149.0" layoutY="84.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Tech Tutor" textAlignment="CENTER" wrappingWidth="264.13671875">
+         <font>
+            <Font name="Chiller" size="39.0" />
+         </font>
+      </Text>
+      <TextField fx:id="Name" layoutX="235.0" layoutY="120.0" prefHeight="25.0" prefWidth="331.0" />
+      <Text layoutX="52.0" layoutY="141.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Name" wrappingWidth="157.13671875">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Text>
+      <Text layoutX="52.0" layoutY="264.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Salary" wrappingWidth="157.13671875">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Text>
+      <Text layoutX="52.0" layoutY="218.0" strokeType="OUTSIDE" strokeWidth="0.0" text="AdminId" wrappingWidth="157.13671875">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Text>
+      <TextField fx:id="AdminId" layoutX="235.0" layoutY="198.0" prefHeight="25.0" prefWidth="331.0" />
+      <TextField fx:id="Salary" layoutX="235.0" layoutY="244.0" prefHeight="25.0" prefWidth="331.0" />
+      <Button layoutX="413.0" layoutY="353.0" mnemonicParsing="false" onAction="#Reset" prefHeight="25.0" prefWidth="59.0" text="Reset">
+         <effect>
+            <InnerShadow color="#171717" />
+         </effect>
+      </Button>
+      <Button layoutX="489.0" layoutY="353.0" mnemonicParsing="false" onAction="#Back" prefHeight="25.0" prefWidth="59.0" text="Back" textFill="#000607">
+         <effect>
+            <InnerShadow />
+         </effect>
+      </Button>
+      <Text layoutX="52.0" layoutY="309.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Phone Number" wrappingWidth="157.13671875">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Text>
+      <TextField fx:id="PhoneNumber" layoutX="235.0" layoutY="289.0" prefHeight="25.0" prefWidth="331.0" />
+      <TextField fx:id="Passward" layoutX="235.0" layoutY="157.0" prefHeight="25.0" prefWidth="331.0" />
+      <Text layoutX="52.0" layoutY="177.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Password" wrappingWidth="86.13671875">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Text>
+   </children>
+</AnchorPane>
